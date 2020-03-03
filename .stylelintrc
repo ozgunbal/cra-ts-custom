@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "shorthand-property-no-redundant-values": true,
+    "order/properties-order": [
+      {
+        "groupName": "positioning",
+        "emptyLineBefore": "always",
+		    "noEmptyLineBetween": true,
+		    "properties": [
+          "position",
+          "top",
+          "bottom",
+          "left",
+          "right"
+		    ],
+      },
+      {
+        "groupName": "display & box model",
+        "emptyLineBefore": "always",
+		    "noEmptyLineBetween": true,
+		    "properties": [
+          "display",
+          "width"
+		    ],
+      }
+    ]
+  }
+}

@@ -27,6 +27,29 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run lint`
+
+Lints source code with respect to rules at `.eslintrc`.
+
+### `npm run lint:css`
+
+Lints styled components' rules with respect to rules at `.stylelintrc`.
+
+### `npm run storybook`
+
+Runs the storybook in the development mode.<br />
+Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `npm run build-storybook`
+
+Builds the storybook for production to the `storybook-static` folder.<br />
+
+The build is minified and the filenames include the hashes.<br />
+Your storybook is ready to be deployed!
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
